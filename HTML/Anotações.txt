@@ -1,0 +1,10 @@
+www.w3schools.com - pesquisar tags
+www.codeacademy.com
+www.codeschool.com
+
+GITHUB Comands:
+git add "diretório" (adiciona os arquivos que deverão ser commitados)
+git commit -m "MENSAGEM" (faz commit local com a mensagem enviada)
+git push origin "branch" (faz o envio da branch atual local para a branch remota)
+
+git pull oigin "branch" (faz o update dos projetos locais buscando no projeto remoto)
