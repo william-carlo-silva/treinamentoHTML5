@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8">
+                <title></title>
+                <link rel="stylesheet" type="text/css" href="format.css">
+        </head>
+
+
+
+        <div id ="container">
+                <p id="hora"> </p>
+        </div>
+
+
+
+        <script>
+        function myMoveHour() {
+          var elem = document.getElementById("hora");
+          var pos = 0;
+          var id = setInterval(frame, 1);
+          function frame() {
+                  elem.innerHTML = Date();
+          }
+        }
+        myMoveHour();
+        </script>
+
+        <body>
+
+        </body>
+</html>
