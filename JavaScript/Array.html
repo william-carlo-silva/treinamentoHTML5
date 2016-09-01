@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8">
+                <title></title>
+
+                <script type="text/javascript">
+                        var array1=[];
+                        var array2=[];
+
+                        function appendArray(array) {
+                                var arraySelected = array == 1 ? array1 : array2;
+                                var arrayid = array == 1 ? "array1" : "array2";
+                                if (arraySelected.length == 10) {
+                                        alert("array cheio"); return;
+                                } else {
+
+                                        arraySelected.push(document.getElementById(arrayid).value);
+                                        document.getElementById(arrayid).value = arraySelected;
+                                }
+                        }
+                </script>
+
+        </head>
+        <body>
+                <label for="array1">Array 1</label><input type="text" name="array1" value="">;
+                <input type="button" name="Array1" value="" onclick="appendArray(1)">
+
+                <label for="array2">Array 2</label><input type="text" name="array2" value="">;
+                <input type="button" name="Array2" value="" onclick="appendArray(2)">
+
+                <label for="op">Operação</label><input type="number" name="op" value="">;
+                <input type="button" name="name" value="Calcular" onclick="calcular(1)">
+
+                <p id="array1">
+
+                </p>
+
+                <p id="array2">
+
+                </p>
+
+        </body>
+</html>
